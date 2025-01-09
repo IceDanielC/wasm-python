@@ -1,0 +1,30 @@
+{
+  "name": "cyb-stitching-wasm",
+  "version": "1.0.10",
+  "description": "wasm接入python算法",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "python"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "pyodide": "^0.25.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
