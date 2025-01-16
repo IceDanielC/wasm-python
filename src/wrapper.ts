@@ -43,7 +43,6 @@ class PythonWASMWrapper {
     // 只是确保opencv-python完成加载，不会导致重复加载
     await this.pyodide.loadPackage("opencv-python");
     let result = "";
-    // 详细python代码见http://xingyun.jd.com/codingRoot/ling-picasso/friendly_crawl_project/tree/uat
     try {
       // 先设置全局变量
       this.pyodide.globals.set('pics_data', picsStr);
